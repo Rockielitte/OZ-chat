@@ -1,6 +1,5 @@
 import { pusherServer } from "./../../libs/pusher";
 import { getCurrentUser } from "./../../libs/getCurrentUser";
-import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 import client from "@/app/libs/prisma";
 interface IReq {

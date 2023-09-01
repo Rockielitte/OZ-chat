@@ -14,7 +14,6 @@ interface Props {
 
 const UserBox: React.FC<Props> = ({ id, name, image }) => {
   const userOnline = useOnlineUsers((state) => state.onlineUsers);
-  console.log(userOnline, "FFFFF");
 
   const route = useRouter();
   const handleMessage = useCallback(async () => {
