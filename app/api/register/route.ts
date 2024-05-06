@@ -14,6 +14,8 @@ export async function POST(req: Request, res: NextApiResponse) {
   const body = await req.json();
   const { email, username: name, password } = body;
   const hashedPassword = await bcript.hash(password, 10);
+  console.log(hashedPassword, "llll");
+
   const user = await prisma.user.create({
     data: {
       email,

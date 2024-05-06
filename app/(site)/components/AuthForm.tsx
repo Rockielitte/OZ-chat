@@ -174,14 +174,14 @@ const AuthForm = (props: Props) => {
             loginSocial("google");
           }}
         ></Button>
-        <Button
+        {/* <Button
           Icon={<AiFillGithub className="text-3xl" />}
           name="Github"
           className=" text-gray-800  hover:border-none border-none text-base"
           onClick={() => {
             loginSocial("github");
           }}
-        ></Button>
+        ></Button> */}
       </div>
       <div className="w-full flex items-center justify-center text-xs py-2 gap-2">
         <span>{variant == "LOGIN" ? "New to OZ ?" : "Already register ?"}</span>
